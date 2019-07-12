@@ -1,0 +1,30 @@
+html body {
+  margin: 0;
+}
+html body * {
+  margin: 0;
+}
+html body #main-section {
+  height: 90vh;
+  background-color: #0198cd;
+  background-image: url("../image/blue.bck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html body #main-section img {
+  height: 80%;
+  box-shadow: 5px 5px 5px black;
+  display: inline-table;
+  alignment: right;
+}
+html body section {
+  height: 70vh;
+  border-top: 6px solid #dadada;
+}
+html body .container {
+  display: inline-table;
+  height: 100%;
+  width: 100%;
+  padding: 5vw;
+}
+/*# sourceMappingURL=index.css.map */
