@@ -1,30 +1,61 @@
 html body {
+  height: 100%;
   margin: 0;
 }
 html body * {
   margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-html body #main-section {
-  height: 90vh;
-  background-color: #0198cd;
+html body section#browse-manager {
   background-image: url("../image/blue.bck.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
 }
-html body #main-section img {
-  height: 80%;
-  box-shadow: 5px 5px 5px black;
-  display: inline-table;
-  alignment: right;
+html body section#browse-manager h1 {
+  font-family: "Great Vibes", cursive;
+  color: black;
+  font-weight: bolder;
+  text-shadow: none;
+}
+html body section#browse-manager img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  box-shadow: 5px 5px 10px black;
 }
 html body section {
-  height: 70vh;
-  border-top: 6px solid #dadada;
+  display: flex;
+  position: relative;
+  height: 90vh;
+  border-bottom: 6px solid #dadada;
 }
-html body .container {
-  display: inline-table;
-  height: 100%;
+html body section .container {
+  position: relative;
   width: 100%;
-  padding: 5vw;
+  margin: 3vw 5vw 5vw;
+}
+html body section .container h1 {
+  font-size: 5vw;
+  font-family: "Great Vibes", cursive;
+  color: #d54d7b;
+  font-weight: normal;
+  text-shadow: 0 1px 1px #fff;
+}
+html body section .container h1 span {
+  font-size: 2vw;
+}
+html body section .container nav {
+  position: absolute;
+  bottom: 0;
+  padding-left: 1vw;
+}
+html body section .container p.introduce {
+  width: 50%;
+  padding: 4vw 1vw;
+  line-height: 1.6;
+  text-indent: 2em;
+  text-align: justify;
 }
 /*# sourceMappingURL=index.css.map */
