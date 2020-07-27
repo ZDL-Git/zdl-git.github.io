@@ -13,17 +13,16 @@ html body section#browse-manager {
   background-size: cover;
 }
 html body section#browse-manager h1 {
-  font-family: "Great Vibes", cursive;
   color: black;
-  font-weight: bolder;
   text-shadow: none;
 }
 html body section#browse-manager img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 30%;
   box-shadow: 5px 5px 10px black;
+}
+html body section#actionlabel img {
+  width: 45%;
+  box-shadow: none;
 }
 html body section {
   display: flex;
@@ -38,9 +37,9 @@ html body section .container {
 }
 html body section .container h1 {
   font-size: 5vw;
-  font-family: "Great Vibes", cursive;
+  font-family: 'Trocchi', serif;
   color: #d54d7b;
-  font-weight: normal;
+  font-weight: bolder;
   text-shadow: 0 1px 1px #fff;
 }
 html body section .container h1 span {
@@ -51,11 +50,24 @@ html body section .container nav {
   bottom: 0;
   padding-left: 1vw;
 }
+html body section .container nav a {
+  color: red;
+}
+html body section .container nav a:hover {
+  color: white;
+}
 html body section .container p.introduce {
   width: 50%;
   padding: 4vw 1vw;
   line-height: 1.6;
   text-indent: 2em;
   text-align: justify;
+}
+html body section .container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  box-shadow: 5px 5px 10px black;
 }
 /*# sourceMappingURL=index.css.map */

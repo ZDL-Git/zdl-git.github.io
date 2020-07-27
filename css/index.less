@@ -12,41 +12,25 @@ html {
     }
 
     section#browse-manager {
-      //height: 90vh;
-      //background-color: #0198cd;
       background-image: url("../image/blue.bck.jpg");
-      //background-repeat: no-repeat;
       background-size: cover;
 
       h1 {
-
-        font-family: "Great Vibes", cursive;
         color: black;
-
-
-        //line-height: 160px;
-        font-weight: bolder;
-        //margin-bottom: 0px;
-        //margin-top: 40px;
-        //text-align: center;
         text-shadow: none;
       }
 
       img {
-        //display: table-cell;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        //height: 20%;
         width: 30%;
         box-shadow: 5px 5px 10px black;
-        //display: inline-table;
-        //alignment: right;
       }
     }
 
     section#actionlabel {
-      //height: 100vh;
+      img {
+        width: 45%;
+        box-shadow: none;
+      }
     }
 
     section {
@@ -60,29 +44,21 @@ html {
       }
 
       .container {
-        //display: inline-table;
         position: relative;
-        //height: 100%;
         width: 100%;
         margin: 3vw 5vw 5vw;
 
         h1 {
           font-size: 5vw;
 
-          font-family: "Great Vibes", cursive;
+          font-family: 'Trocchi', serif;
           color: #d54d7b;
 
-
-          //line-height: 160px;
-          font-weight: normal;
-          //margin-bottom: 0px;
-          //margin-top: 40px;
-          //text-align: center;
+          font-weight: bolder;
           text-shadow: 0 1px 1px #fff;
 
           span {
             font-size: 2vw;
-            //color: #adadad;
           }
         }
 
@@ -90,16 +66,30 @@ html {
           position: absolute;
           bottom: 0;
           padding-left: 1vw;
+
+          a {
+            color: red;
+
+            &:hover {
+              color: white;
+            }
+          }
         }
 
         p.introduce {
-          //position: absolute;
-          //bottom: 0;
           width: 50%;
           padding: 4vw 1vw;
           line-height: 1.6;
           text-indent: 2em;
           text-align: justify;
+        }
+
+        img {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 30%;
+          box-shadow: 5px 5px 10px black;
         }
       }
     }

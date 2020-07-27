@@ -20,7 +20,7 @@
       <!--      <br>安装方法：<a href="https://github.com/ZDL-Git/browse-manager#user-content-安装">见说明</a>-->
     </p>
     <nav>
-      <a href="https://github.com/ZDL-Git/browse-manager">项目主页</a>
+      <a href="https://github.com/ZDL-Git/browse-manager">项目主页</a> |
       <a href="https://github.com/ZDL-Git/browse-manager#user-content-安装">安装方法</a>
     </nav>
     <img src="https://github.com/ZDL-Git/resources-store/raw/master/browse-manager/image/popup-bird.gif?raw=true"
@@ -32,22 +32,28 @@
     <h1>
       ActionLabel <span>(developing...)</span>
     </h1>
+    <p class="introduce">
+      待补充。。。
+    </p>
+    <nav>
+      <a href="https://github.com/ZDL-Git/ActionLabel">项目主页</a> |
+      <a href="https://github.com/ZDL-Git/ActionLabel">安装方法（待补充）</a>
+    </nav>
+    <img src="https://raw.githubusercontent.com/ZDL-Git/resources-store/master/Actionlabel/image/actionlabel-interface.png"
+         alt="">
   </div>
 </section>
 
 <script type="text/javascript">
-  let scrollToHashtag = function () {
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if (window.location.hash && isChrome) {
-      setTimeout(function () {
-        var hash = window.location.hash;
-        window.location.hash = "";
-        window.location.hash = hash;
-      }, 2000);
-    }
+  let moveHashtagAppToTop = function () {
+    let hashAsAppname = window.location.hash;
+    $("section" + hashAsAppname).prependTo('body');
   }
-  $(document).ready(scrollToHashtag);
-  $(window).on('load', scrollToHashtag);
+  let scrollToTop = function () {
+    $("html, body").animate({scrollTop: 0}, "slow");
+  }
+  $(document).ready(moveHashtagAppToTop);
+  $(window).on('load', scrollToTop);
 </script>
 </body>
 </html>
