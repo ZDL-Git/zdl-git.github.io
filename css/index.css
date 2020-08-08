@@ -18,7 +18,9 @@ html body section#browse-manager h1 {
 }
 html body section#browse-manager img {
   width: 30%;
-  box-shadow: 0 10px 30px black;
+  box-shadow: 0 0 16px black;
+  bottom: 20px;
+  right: 20px;
 }
 @media (orientation: portrait) {
   html body section#browse-manager img {
@@ -34,7 +36,7 @@ html body section#actionlabel img {
 }
 @media (orientation: landscape) {
   html body section#actionlabel img {
-    width: 70vh;
+    width: 40vw;
   }
 }
 html body section {
@@ -46,6 +48,7 @@ html body section {
 html body section .container {
   position: relative;
   width: 100%;
+  overflow: hidden;
   margin: 3vw 5vw 5vw;
 }
 @media (orientation: portrait) {

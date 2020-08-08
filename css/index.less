@@ -22,7 +22,9 @@ html {
 
       img {
         width: 30%;
-        box-shadow: 0 10px 30px black;
+        box-shadow: 0 0 16px black;
+        bottom: 20px;
+        right: 20px;
         @media (orientation: portrait) {
           display: block;
           margin-top: 3vh;
@@ -37,7 +39,7 @@ html {
       img {
         box-shadow: none;
         @media (orientation: landscape) {
-          width: 70vh;
+          width: 40vw;
         }
       }
     }
@@ -55,6 +57,7 @@ html {
       .container {
         position: relative;
         width: 100%;
+        overflow: hidden;
         margin: 3vw 5vw 5vw;
 
         @media (orientation: portrait) {
