@@ -75,7 +75,13 @@ html body section .container div.splide li img {
   bottom: 0;
   width: 100%;
   height: auto;
-  vertical-align: middle;
+}
+html body section .container div.splide .splide__track {
+  top: 50%;
+  transform: translateY(-50%);
+}
+html body section .container div.splide .splide__pagination button {
+  box-shadow: 0 0 3px black;
 }
 @media (orientation: portrait) {
   html body section .container div.splide {
