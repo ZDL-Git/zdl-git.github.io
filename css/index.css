@@ -43,6 +43,11 @@ html body section .container h1 {
 html body section .container h1 span {
   font-size: 2vw;
 }
+@media (orientation: portrait) {
+  html body section .container h1 {
+    font-size: 7vw;
+  }
+}
 html body section .container nav {
   position: absolute;
   bottom: 0;
@@ -94,7 +99,7 @@ html body section .container p.introduce {
 @media (orientation: portrait) {
   html body section .container p.introduce {
     width: 100%;
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=index.css.map */
