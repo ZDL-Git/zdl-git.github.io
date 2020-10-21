@@ -16,29 +16,6 @@ html body section#browse-manager h1 {
   color: black;
   text-shadow: none;
 }
-html body section#browse-manager img {
-  width: 30%;
-  box-shadow: 0 0 16px black;
-  bottom: 20px;
-  right: 20px;
-}
-@media (orientation: portrait) {
-  html body section#browse-manager img {
-    display: block;
-    margin-top: 3vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-}
-html body section#actionlabeller img {
-  box-shadow: none;
-}
-@media (orientation: landscape) {
-  html body section#actionlabeller img {
-    width: 40vw;
-  }
-}
 html body section {
   display: flex;
   position: relative;
@@ -72,34 +49,52 @@ html body section .container nav {
   padding-left: 1vw;
 }
 html body section .container nav a {
-  color: red;
+  color: #f37070;
 }
 html body section .container nav a:hover {
-  color: white;
+  font-size: 20px;
+}
+html body section .container div.splide {
+  position: absolute;
+  width: 40vw;
+  height: 60vh;
+  right: 0;
+  bottom: 0;
+}
+html body section .container div.splide li {
+  display: block;
+  height: 100%;
+  line-height: 100%;
+}
+html body section .container div.splide li img {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+@media (orientation: portrait) {
+  html body section .container div.splide {
+    position: relative;
+    margin: 6vh auto;
+    width: 90%;
+    height: 40vh;
+  }
 }
 html body section .container p.introduce {
   width: 50%;
   padding: 4vw 1vw;
   line-height: 1.6;
   text-align: justify;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  word-wrap: break-word;
 }
 @media (orientation: portrait) {
   html body section .container p.introduce {
     width: 100%;
     font-size: 20px;
-  }
-}
-html body section .container img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 30%;
-  box-shadow: 5px 5px 10px black;
-}
-@media (orientation: portrait) {
-  html body section .container img {
-    position: static;
-    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
